@@ -5,6 +5,7 @@
   <title>All Rounder</title>
 </head>
 <body data-gr-c-s-loaded="true"><header class="text-gray-700 body-font">
+
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       
@@ -66,8 +67,17 @@
       <div class="xl:w-1/3 md:w-1/2 p-4">
         <div class="border border-gray-300 p-6 rounded-lg">
           
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Best Flagships</h2>
+          <p class="leading-relaxed text-base"><ol type="I">
+            <li>1.oppo find x
+              <li>2.Oneplus 8 or 8 pro
+                <li>3.Samsung S20
+                  <li>4.Iphone 11 or 11 pro
+                    <li>5.Moto edge plus
+                      <li>6. MI Note 10 youth
+                        <li>7.poco x2
+                          <li>8.asus rog 2 (rog 3 coming soon)</ol><hr>
+              .</p>
         </div>
       </div>
       <div class="xl:w-1/3 md:w-1/2 p-4">
@@ -85,7 +95,207 @@
         </div>
       </div>
     
-</div></div></section>
+</div></div>
+
+get your things do with my to do app
+
+<html lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>to-do by yj</title>
+</head>
+
+<body data-gr-c-s-loaded="true">
+  <centre><p id="th">'s to do list</p></centre>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">To DO by Yjain</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://sensortower.com/android/publisher/yuga-jain/Yuga%2BJain">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Items
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="action 1.html">Action</a>
+                      <a class="dropdown-item" href="action 2.html">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="https://to-do.live.com/tasks/">Something else here</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://www.youtube.com/channel/UCQ65koPexEWsUjiuZ-uzM2A?view_as=subscriber" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
+
+  <div class="container my-4">
+      <h2 class="text-center">to do by Yuga Jain</h2>
+       
+          <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Add an item to the list</small>
+          </div>
+
+          <div class="form-group">
+              <label for="description">Description</label>
+              <textarea class="form-control" id="description" rows="3"></textarea>
+          </div>
+          
+
+          <button id="add" class="btn btn-primary">Add to list</button>
+          <button id="clear" class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+       
+
+      <div id="items" class="my-4">
+          <h2>Your Items</h2>
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">SNo</th>
+                  <th scope="col">Item Title</th>
+                  <th scope="col">Item Description</th> 
+                  <th scope="col">Actions</th> 
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+      </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script>
+          function getAndUpdate(){
+              console.log("Updating List...");
+              tit = document.getElementById('title').value;
+              desc = document.getElementById('description').value;
+              if (localStorage.getItem('itemsJson')==null){
+                  itemJsonArray = [];
+                  itemJsonArray.push([tit, desc]);
+                  localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+              }
+              else{
+                  itemJsonArrayStr = localStorage.getItem('itemsJson')
+                  itemJsonArray = JSON.parse(itemJsonArrayStr);
+                  itemJsonArray.push([tit, desc]);
+                  localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+              }
+              update();
+          }
+
+          function update(){
+              if (localStorage.getItem('itemsJson')==null){
+                  itemJsonArray = []; 
+                  localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+              } 
+              else{
+                  itemJsonArrayStr = localStorage.getItem('itemsJson')
+                  itemJsonArray = JSON.parse(itemJsonArrayStr); 
+              }
+              // Populate the table
+              let tableBody = document.getElementById("tableBody");
+              let str = "";
+              itemJsonArray.forEach((element, index) => {
+                  str += `
+                  <tr>
+                  <th scope="row">${index + 1}</th>
+                  <td>${element[0]}</td>
+                  <td>${element[1]}</td> 
+                  <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td>
+                  <td><input type="checkbox"" onclick="done(${index})"> done</td> 
+                  </tr>`; 
+              });
+              tableBody.innerHTML = str;
+          }
+          add = document.getElementById("add");
+          add.addEventListener("click", getAndUpdate);
+          update();
+          function deleted(itemIndex){
+              console.log("Delete", itemIndex);
+              itemJsonArrayStr = localStorage.getItem('itemsJson')
+              itemJsonArray = JSON.parse(itemJsonArrayStr);
+              // Delete itemIndex element from the array
+              itemJsonArray.splice(itemIndex, 1);
+              localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
+              update();
+
+          }
+          function clearStorage(){
+              if (confirm("Do you areally want to clear all the data from the page?")){
+              console.log('Clearing the storage')
+              localStorage.clear();
+              update()
+              }
+          }
+      </script>
+
+<script src="index.js"></script>
+
+<p>find all Your tools here and you can find the code by right clicking the tool and then pressing inspect and the hitting ctrl c</p>
+<p>
+  <body data-gr-c-s-loaded="true">
+  tools today- all the basic tools you need in your life of tech
+  <h4>Sign up or login tools</h4>
+  <input type="email" placeholder="email">
+  <br>
+  <input type="password" placeholder="password">
+  <p>Range:</p>
+  <input type="range">
+  <p>Checkbox tool:</p>
+  <input type="checkbox">
+  <p>date</p>
+  <input type="date">
+  <p>color:</p>
+  <input type="color">
+  
+  </body></p>
+<!--  -->
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+</section>
 
 <section class="text-gray-700 body-font relative">
   <div class="container px-5 py-24 mx-auto">
@@ -233,4 +443,8 @@ else {
 		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
 	}
 	// ]]>
-</script></body></html>
+</script>
+
+
+
+</body></html>
