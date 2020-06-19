@@ -71,28 +71,30 @@
           <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Best Flagships</h2>
           <p class="leading-relaxed text-base"></p><ol type="I">
             <li>1.oppo find x
-              </li><li>2.Oneplus 8 or 8 pro
-                </li><li>3.Samsung S20
-                  </li><li>4.Iphone 11 or 11 pro
-                    </li><li>5.Moto edge plus
-                      </li><li>6. MI Note 10 youth
-                        </li><li>7.poco x2
-                          </li><li>8.asus rog 2 (rog 3 coming soon)</li></ol><hr>
+              <li>2.Oneplus 8 or 8 pro
+              <li>3.Samsung S20
+              <li>4.Iphone 11 or 11 pro
+              <li>5.Moto edge plus
+              <li>6. MI Note 10 youth
+              <li>7.poco x2
+                          <li>8.asus rog 2 (rog 3 coming soon)</ol><hr>
               .<p></p>
         </div>
       </div>
       <div class="xl:w-1/3 md:w-1/2 p-4">
         <div class="border border-gray-300 p-6 rounded-lg">
           
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+         <a href="/myapps.html"> <h2 class="text-lg text-gray-900 font-medium title-font mb-2">My android apps</h2>
+          <p class="leading-relaxed text-base">install all my android apps with a press of a button.</p></a>
         </div>
       </div>
       <div class="xl:w-1/3 md:w-1/2 p-4">
         <div class="border border-gray-300 p-6 rounded-lg">
           
-          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
-          <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          <h2 class="text-lg text-gray-900 font-medium title-font mb-2">How to build your own pc </h2>
+         <a href="/build a pc.html"> <p class="leading-relaxed text-base">Things needed..
+            <br>monitor, mouse, motherboard, cpu holder, a fan, ram, hard drive or a processor, and additional hard drive... Press The blue text to read the full article<hr></a>
+          </p>
         </div>
       </div>
     
@@ -361,6 +363,130 @@ get your things do with my to do app
 	// ]]>
 </script>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">.container{
+      text-align: center;
+      margin-top:23px
+  }
+  
+  table{
+      margin: auto;
+  }
+  
+  input{
+      border-radius: 21px;
+      border: 5px solid #244624;
+      font-size:34px;
+      height: 65px;
+      width: 456px;
+  }
+  
+  button{
+      border-radius: 20px;
+      font-size: 40px;
+      background: #978fa0;
+      width: 102px;
+      height: 90px;
+      margin: 6px;
+  }
+  
+  .calculator{ 
+      border: 4px solid #13695d;
+      background-color: #ff99f7;
+      padding: 23px;
+      border-radius: 53px;
+      display: inline-block;
+      
+  }
+  
+  h1{
+      font-size: 28px;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  </style>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Catch up with all your no.s</h1>
+
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button>C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>X</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>/</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">let screen = document.getElementById('screen');
+  buttons = document.querySelectorAll('button');
+  let screenValue = '';
+  for (item of buttons) {
+      item.addEventListener('click', (e) => {
+          buttonText = e.target.innerText;
+          console.log('Button text is ', buttonText);
+          if (buttonText == 'X') {
+              buttonText = '*';
+              screenValue += buttonText;
+              screen.value = screenValue;
+          }
+          else if (buttonText == 'C') {
+              screenValue = "";
+              screen.value = screenValue;
+          }
+          else if (buttonText == '=') {
+              screen.value = eval(screenValue);
+          }
+          else {
+              screenValue += buttonText;
+              screen.value = screenValue;
+          }
+  
+      })
+  }
+  
+  </script>
+
+</html>
+
+
 
 
 
@@ -390,7 +516,7 @@ get your things do with my to do app
           <textarea class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
         </div>
         <div class="p-2 w-full">
-         <a href="/index.html"> <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">submit</button></a>
+         <a href="/thank you.html"> <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">submit</button></a>
         </div>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
           <a class="text-indigo-500"></a>allrounder0091@gmail.com
