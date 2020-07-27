@@ -1,0 +1,1 @@
+alert('you are a goood person if you have visited this website');
